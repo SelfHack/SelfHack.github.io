@@ -13,13 +13,20 @@
 <section id="one" class="main special">
 	<div class="container">
 		<span class="image fit primary"><img src="assets/images/section01.jpg" alt="" /></span>
+		{% for hack in site.data.hacks %}
+		{% assign now = "now" | date: "%Y-%m-%d" %}
+		{% assign hackdate = hack.date | date: "%Y-%m-%d" %}
+		{% if hackdate == now %}
 		<div class="content">
 			<header class="major">
-				<h2>Today's Theme: Financial Wellness</h2>
+				<h2>Today's Theme: {{ hack.title }}</h2>
 			</header>
-			<p>- Spend 15 minutes creating or reviewing a monthly budget.</p>
-			<p>- Write down all of your monthly subscription costs and categorize them into "needs" versus "wants."</p>
+			<p>- {{ hack.ex1 }}</p>
+			<p>- {{ hack.ex2 }}</p>
+			<p>- {{ hack.ex3 }}</p>
 		</div>
+		{% endif %}
+		{% endfor %}
 		<a href="#two" class="goto-next scrolly">Next</a>
 	</div>
 </section>
@@ -27,7 +34,7 @@
 <!-- Two -->
 <section id="two" class="main special">
 	<div class="container">
-		<span class="image fit primary"><img src="assets/images/pic02.jpg" alt="" /></span>
+		<span class="image fit primary"><img src="assets/images/section02.jpg" alt="" /></span>
 		<div class="content">
 			<header class="major">
 				<h2>Previous Themes</h2>
