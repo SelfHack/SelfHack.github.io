@@ -26,6 +26,9 @@
 	</div>
 </section>
 
+
+
+
 <!-- Two -->
 <section id="two" class="main special">
 	<div class="container">
@@ -36,11 +39,11 @@
 			</header>
 			<!--<p></p> -->
 			<ul>
-				{% for hack in site.data.hacks limit:4 offset:1 %}
 				{% assign now = "now" | date: "%Y-%m-%d" %}
-				{% assign hackdate = hack.date | date: "%Y-%m-%d" %}
+				{% assign old_hacks = (site.date.hacks | where_exp: 'date', 'date < now' | sort: 'date') %}
+				{% for hack in old_hacks limit:4 %}
 				  <li>
-					<span class="icon major"></span>
+					<span class="icon major fa-circle-plus"></span>
 					<h3>{{ hack.title }}</h3>
 				  </li>
 				{% endfor %}
