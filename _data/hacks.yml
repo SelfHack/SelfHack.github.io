@@ -1,10 +1,3 @@
-- title: Financial Wellness
-  date: 2022-11-11
-  img: assets/images/bg_money_grow.jpg
-  ex1: Spend 15 minutes creating or reviewing a monthly budget.
-  ex2: Write down all of your monthly subscription costs and categorize them into "needs" versus "wants."
-  ex3: Schedule a call with a financial planner.
-
 - title: Community Engagement
   date: 2022-11-13
   img: assets/images/bg_volunteer.jpg
@@ -18,6 +11,13 @@
   ex1: 
   ex2: 
   ex3: 
+
+- title: Financial Wellness
+  date: 2022-11-11
+  img: assets/images/bg_money_grow.jpg
+  ex1: Spend 15 minutes creating or reviewing a monthly budget.
+  ex2: Write down all of your monthly subscription costs and categorize them into "needs" versus "wants."
+  ex3: Schedule a call with a financial planner.
 
 - title: Relationships
   date: 2022-11-10

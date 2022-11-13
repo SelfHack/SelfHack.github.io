@@ -36,14 +36,13 @@
 			</header>
 			<!--<p></p> -->
 			<ul>
-				{% for hack in site.data.hacks limit:4 %}
+				{% for hack in site.data.hacks limit:4 offset:1 %}
 				{% assign now = "now" | date: "%Y-%m-%d" %}
 				{% assign hackdate = hack.date | date: "%Y-%m-%d" %}
-				{% if hackdate < now %}
 				  <li>
+					<span class="icon major"></span>
 					<h3>{{ hack.title }}</h3>
 				  </li>
-				{% endif %}
 				{% endfor %}
 			</ul>
 			<!-- <ul class="icons-grid">
