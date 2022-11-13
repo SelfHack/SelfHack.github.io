@@ -43,7 +43,7 @@
 				{% assign old_hacks = (site.date.hacks | where_exp: 'date', 'date < now' | sort: 'date') %}
 				{% for hack in old_hacks limit:4 %}
 				  <li>
-					<span class="icon major fa-circle-plus"></span>
+					<span class="icon major fa-code"></span>
 					<h3>{{ hack.title }}</h3>
 				  </li>
 				{% endfor %}
