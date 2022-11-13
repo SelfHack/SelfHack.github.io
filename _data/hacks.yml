@@ -1,11 +1,48 @@
 - title: Financial Wellness
-  date: 2022-11-13
+  date: 2022-11-11
+  img: assets/images/bg_money_grow.jpg
   ex1: Spend 15 minutes creating or reviewing a monthly budget.
   ex2: Write down all of your monthly subscription costs and categorize them into "needs" versus "wants."
   ex3: Schedule a call with a financial planner.
 
 - title: Community Engagement
-  date: 2022-11-14
+  date: 2022-11-13
+  img: assets/images/bg_volunteer.jpg
   ex1: Research local charities and make a list of your favorites.
   ex2: Sign up to volunteer at an upcoming charity event.
   ex3: Donate to your favorite charity.
+
+- title: Health/Fitness
+  date: 2022-11-12
+  img: assets/images/bg_volunteer.jpg
+  ex1: 
+  ex2: 
+  ex3: 
+
+- title: Relationships
+  date: 2022-11-10
+  img: assets/images/bg_volunteer.jpg
+  ex1: 
+  ex2: 
+  ex3: 
+
+- title: General Knowledge
+  date: 2022-11-09
+  img: assets/images/bg_volunteer.jpg
+  ex1: 
+  ex2: 
+  ex3: 
+
+- title: Productivity
+  date: 2022-11-08
+  img: assets/images/bg_volunteer.jpg
+  ex1: 
+  ex2: 
+  ex3: 
+
+- title: Career
+  date: 2022-11-07
+  img: assets/images/bg_volunteer.jpg
+  ex1: 
+  ex2: 
+  ex3: 

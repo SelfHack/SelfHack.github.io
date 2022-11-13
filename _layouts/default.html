@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 {% include head.html %}
 <body>
@@ -12,11 +7,11 @@
 <!-- One -->
 <section id="one" class="main special">
 	<div class="container">
-		<span class="image fit primary"><img src="assets/images/section01.jpg" alt="" /></span>
 		{% for hack in site.data.hacks %}
 		{% assign now = "now" | date: "%Y-%m-%d" %}
 		{% assign hackdate = hack.date | date: "%Y-%m-%d" %}
-		{% if hackdate == "2022-11-14" %}
+		{% if hackdate == now %}
+		<span class="image fit primary"><img src="{{ hack.img }}" alt="" /></span>
 		<div class="content">
 			<header class="major">
 				<h2>Today's Theme: {{ hack.title }}</h2>
@@ -34,13 +29,24 @@
 <!-- Two -->
 <section id="two" class="main special">
 	<div class="container">
-		<span class="image fit primary"><img src="assets/images/section02.jpg" alt="" /></span>
+		<span class="image fit primary"><img src="assets/images/bg_beach.jpg" alt="" /></span>
 		<div class="content">
 			<header class="major">
 				<h2>Previous Themes</h2>
 			</header>
 			<!--<p></p> -->
-			<ul class="icons-grid">
+			<ul>
+				{% for hack in site.data.hacks limit:4 %}
+				{% assign now = "now" | date: "%Y-%m-%d" %}
+				{% assign hackdate = hack.date | date: "%Y-%m-%d" %}
+				{% if hackdate < now %}
+				  <li>
+					<h3>{{ hack.title }}</h3>
+				  </li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+			<!-- <ul class="icons-grid">
 				<li>
 					<span class="icon major fa-camera-retro"></span>
 					<h3>Health/Wellness</h3>
@@ -57,7 +63,7 @@
 					<span class="icon major fa-coffee"></span>
 					<h3>Productivity</h3>
 				</li>
-			</ul>
+			</ul> -->
 		</div>
 		<a href="#footer" class="goto-next scrolly">Next</a>
 	</div>
