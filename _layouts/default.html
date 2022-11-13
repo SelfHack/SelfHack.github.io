@@ -16,7 +16,7 @@
 		{% for hack in site.data.hacks %}
 		{% assign now = "now" | date: "%Y-%m-%d" %}
 		{% assign hackdate = hack.date | date: "%Y-%m-%d" %}
-		{% if hackdate == now %}
+		{% if hackdate == "2022-11-14" %}
 		<div class="content">
 			<header class="major">
 				<h2>Today's Theme: {{ hack.title }}</h2>
