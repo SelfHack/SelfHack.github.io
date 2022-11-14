@@ -16,6 +16,9 @@
 			<header class="major">
 				<h2>Today's Theme: {{ hack.title }}</h2>
 			</header>
+			<h3>{{ hack.description }}</h3>
+			<br>
+			<h3>Here are some ideas to get you started:</h3>
 			<p>- {{ hack.ex1 }}</p>
 			<p>- {{ hack.ex2 }}</p>
 			<p>- {{ hack.ex3 }}</p>
@@ -26,9 +29,6 @@
 	</div>
 </section>
 
-
-
-
 <!-- Two -->
 <section id="two" class="main special">
 	<div class="container">
@@ -38,16 +38,38 @@
 				<h2>Previous Themes</h2>
 			</header>
 			<!--<p></p> -->
+<!-- 
 			<ul>
+				{% for hack in site.data.hacks %}
 				{% assign now = "now" | date: "%Y-%m-%d" %}
-				{% assign old_hacks = (site.date.hacks | where_exp: 'date', 'date < now' | sort: 'date') %}
-				{% for hack in old_hacks limit:4 %}
+				{% assign hackdate = hack.date | date: "%Y-%m-%d" %}
+				  {% if hackdate < now %}
 				  <li>
 					<span class="icon major fa-code"></span>
 					<h3>{{ hack.title }}</h3>
 				  </li>
+				  {% endif %}
+				{% endfor %}
+			</ul> -->
+
+			{% assign currentYear = site.time | date: "%Y" %}
+			{% assign yesterday = site.time | date: "%j" | minus: 1 %}
+			{% assign yesterday_minus = site.time | date: "%j" | minus: 5  %}
+
+			<ul class="icons-grid">
+				{% for hack in site.data.hacks %}
+				{% assign hackYear = hack.date | date: "%Y" %}
+    			{% assign hackDay = hack.date | date: "%j" | plus: 0 %}
+
+				{% if currentYear == hackYear and hackDay > yesterday_minus and hackDay <= yesterday %}
+				  <li>
+					<span class="icon major fa-code"></span>
+					<h3>{{ hack.title }}</h3>
+				  </li>
+				{% endif %}
 				{% endfor %}
 			</ul>
+
 			<!-- <ul class="icons-grid">
 				<li>
 					<span class="icon major fa-camera-retro"></span>

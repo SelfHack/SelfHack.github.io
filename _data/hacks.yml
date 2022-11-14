@@ -1,18 +1,33 @@
-- title: Test Theme
-  date: 2022-11-14
+- title: Test Theme 16th
+  date: 2022-11-16
   img: assets/images/bg_volunteer.jpg
   ex1: Test1
   ex2: Test2
   ex3: Test3
 
-- title: Community Engagement
+- title: Test Theme 15th
+  date: 2022-11-15
+  img: assets/images/bg_volunteer.jpg
+  ex1: Test1
+  ex2: Test2
+  ex3: Test3
+
+- title: Community
+  date: 2022-11-14
+  description: Spend some time thinking about ways to give back to your community.
+  img: assets/images/bg_volunteer.jpg
+  ex1: Research local charities and make a list of your favorites.
+  ex2: Sign up to volunteer at an upcoming charity event.
+  ex3: Donate to your favorite charity.
+
+- title: Productivity
   date: 2022-11-13
   img: assets/images/bg_volunteer.jpg
   ex1: Research local charities and make a list of your favorites.
   ex2: Sign up to volunteer at an upcoming charity event.
   ex3: Donate to your favorite charity.
 
-- title: Health/Fitness (test)
+- title: Health/Fitness
   date: 2022-11-12
   img: assets/images/bg_volunteer.jpg
   ex1: 
