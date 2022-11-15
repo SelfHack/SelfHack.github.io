@@ -19,9 +19,11 @@
 			<h3>{{ hack.description }}</h3>
 			<br>
 			<h3>Here are some ideas to get you started:</h3>
-			<p>- {{ hack.ex1 }}</p>
-			<p>- {{ hack.ex2 }}</p>
-			<p>- {{ hack.ex3 }}</p>
+			<div>
+				<p>- {{ hack.ex1 }}</p>
+				<p>- {{ hack.ex2 }}</p>
+				<p>- {{ hack.ex3 }}</p>
+			</div>
 		</div>
 		{% endif %}
 		{% endfor %}
@@ -63,7 +65,7 @@
 
 				{% if currentYear == hackYear and hackDay > yesterday_minus and hackDay <= yesterday %}
 				  <li>
-					<span class="icon major fa-code"></span>
+					<span class="icon major fa-plus-circle"></span>
 					<h3>{{ hack.title }}</h3>
 				  </li>
 				{% endif %}
