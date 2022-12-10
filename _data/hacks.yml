@@ -1,70 +1,41 @@
-- title: Test Theme 16th
-  date: 2022-11-16
-  img: assets/images/bg_volunteer.jpg
-  ex1: Test1
-  ex2: Test2
-  ex3: Test3
-
-- title: Test Theme 15th
-  date: 2022-11-15
-  img: assets/images/bg_volunteer.jpg
-  ex1: Test1
-  ex2: Test2
-  ex3: Test3
-
 - title: Community
-  date: 2022-11-14
+  date: 2022-12-10
   description: Spend some time thinking about ways to give back to your community.
   img: assets/images/bg_volunteer.jpg
   ex1: Research local charities and make a list of your favorites.
   ex2: Sign up to volunteer at an upcoming charity event.
-  ex3: Donate to your favorite charity.
 
 - title: Productivity
-  date: 2022-11-13
+  date: 2022-12-11
+  description: Take 15 minutes to clean your work area.
   img: assets/images/bg_volunteer.jpg
-  ex1: Research local charities and make a list of your favorites.
-  ex2: Sign up to volunteer at an upcoming charity event.
-  ex3: Donate to your favorite charity.
+  ex1: Organize your desk, workspace, etc. 
+  ex2: Sanitize your work station, tools, or other materials you use often
 
-- title: Health/Fitness
-  date: 2022-11-12
+- title: Career
+  date: 2022-12-09
+  description: Focus on your career goals.
   img: assets/images/bg_volunteer.jpg
-  ex1: 
-  ex2: 
-  ex3: 
+  ex1: Create or update your list of career goals for the day/week/month/year
+  ex2: Update the progress on your existing career goals
 
 - title: Financial Wellness
-  date: 2022-11-11
+  date: 2022-12-08
+  description: Make a plan to improve your financial future
   img: assets/images/bg_money_grow.jpg
   ex1: Spend 15 minutes creating or reviewing a monthly budget.
   ex2: Write down all of your monthly subscription costs and categorize them into "needs" versus "wants."
-  ex3: Schedule a call with a financial planner.
 
 - title: Relationships
-  date: 2022-11-10
+  date: 2022-12-07
+  description: Do something special for someone you love.
   img: assets/images/bg_volunteer.jpg
-  ex1: 
-  ex2: 
-  ex3: 
+  ex1: Plan a date night for your significant other
+  ex2: Send a family member a small gift or card
 
-- title: General Knowledge
-  date: 2022-11-09
+- title: Health/Fitness
+  date: 2022-12-06
+  description: Try a new healthy recipe.
   img: assets/images/bg_volunteer.jpg
-  ex1: 
-  ex2: 
-  ex3: 
-
-- title: Productivity
-  date: 2022-11-08
-  img: assets/images/bg_volunteer.jpg
-  ex1: 
-  ex2: 
-  ex3: 
-
-- title: Career
-  date: 2022-11-07
-  img: assets/images/bg_volunteer.jpg
-  ex1: 
-  ex2: 
-  ex3: 
+  ex1: Research a new smoothie recipe
+  ex2: Add ingredients for healthy meal to your grocery list
