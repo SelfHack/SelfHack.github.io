@@ -2,7 +2,7 @@ name: nightly_build
 
 on:
   schedule:
-    - cron: '0 0 * * *'  #scheduled for midnight
+    - cron: '0 4 * * *'  #scheduled for midnight (EST)
 jobs:
   refresh:
     runs-on: ubuntu-latest
