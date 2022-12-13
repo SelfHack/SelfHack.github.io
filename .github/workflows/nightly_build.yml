@@ -2,7 +2,7 @@ name: nightly_build
 
 on:
   schedule:
-    - cron: '0 4 * * *'  #scheduled for midnight (EST)
+    - cron: '0 5 * * *'  #scheduled for midnight (EST)
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -14,4 +14,4 @@ jobs:
             --header "Authorization: Bearer $USER_TOKEN" \
             --url  https://api.github.com/repos/SelfHack/SelfHack.github.io/pages/builds
         env:
-          USER_TOKEN: ${{ secrets.user_token }}
+          USER_TOKEN: ${{ secrets.USER_TOKEN }}
