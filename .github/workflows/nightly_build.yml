@@ -14,4 +14,4 @@ jobs:
             --header "Authorization: Bearer $USER_TOKEN" \
             --url  https://api.github.com/repos/SelfHack/SelfHack.github.io/pages/builds
         env:
-          USER_TOKEN: ${{secrets.USER_TOKEN}}
+          USER_TOKEN: ${{ secrets.user_token }}
