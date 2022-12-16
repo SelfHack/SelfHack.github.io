@@ -1,4 +1,4 @@
-name: nightly_build
+name: test_env_var
 
 on:
   schedule:
