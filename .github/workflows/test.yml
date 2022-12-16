@@ -1,8 +1,6 @@
 name: test_env_var
 
-on:
-  schedule:
-    - cron: '48 20 * * *' 
+on: [workflow_dispatch]
 jobs:
   refresh:
     runs-on: ubuntu-latest
