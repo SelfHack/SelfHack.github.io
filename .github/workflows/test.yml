@@ -5,8 +5,11 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - name: Test
+      - name: Rebuild
         run: |
-          echo "Token: $USER_TOKEN"
+          curl --fail --request POST \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer $USER_TOKEN" \
+            --url  https://api.github.com/repos/SelfHack/SelfHack.github.io/pages/builds
         env:
           USER_TOKEN: ${{ secrets.USER_TOKEN }}
