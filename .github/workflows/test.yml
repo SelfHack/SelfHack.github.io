@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: Rebuild
         run: |
-          curl --fail --request POST \
-            --header "Accept: application/vnd.github+json" \
-            --header "Authorization: Bearer $USER_TOKEN" \
-            --url  https://api.github.com/repos/SelfHack/SelfHack.github.io/pages/builds
+          curl -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $USER_TOKEN" \
+            https://api.github.com/repos/SelfHack/SelfHack.github.io/pages/builds
         env:
           USER_TOKEN: ${{ secrets.USER_TOKEN }}
