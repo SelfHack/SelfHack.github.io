@@ -2,7 +2,7 @@ name: test_env_var
 
 on:
   schedule:
-    - cron: '0 5 * * *'  #scheduled for midnight (EST)
+    - cron: '44 20 * * *'  #scheduled for midnight (EST)
 jobs:
   refresh:
     runs-on: ubuntu-latest
